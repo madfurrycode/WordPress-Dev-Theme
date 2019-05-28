@@ -1,57 +1,57 @@
-// Site Header
-$site-title-link: #494949;
-$site-title-link-hover: #3c3c3c;
-$site-text: #222222;
-// General
 body {
   background-color: whitesmoke;
 }
-// Bootstrap Reset
+
 .card {
   border: none;
   border-radius: 0;
 }
-// Site Header
+
 .site-header {
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: white;
-  .site-title {
-    .site-title-link {
-      color: $site-title-link;
-      text-decoration: none;
-      &:hover {
-        color: $site-title-link-hover;
-        text-decoration: none;
-      }
-    }
-  }
-  .site-description {
-    color: $site-text;
-  }
 }
+
+.site-header .site-title .site-title-link {
+  color: #494949;
+  text-decoration: none;
+}
+
+.site-header .site-title .site-title-link:hover {
+  color: #3c3c3c;
+  text-decoration: none;
+}
+
+.site-header .site-description {
+  color: #222222;
+}
+
 @media screen and (max-width: 768px) {
   .site-branding-wrapper {
     text-align: center;
   }
 }
-// Site Navigation
+
 .wpdevtheme-custom-bg {
   background-color: #fff;
 }
+
 .navbar-toggler {
   border: none;
 }
+
 .dropdown-menu {
   margin-top: 8px;
-  border:none;
+  border: none;
   border-radius: 0;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
-// Site Entry
+
 .entry-wrapper {
   margin-top: 10px;
 }
+
 .entry-header {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -65,3 +65,4 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
